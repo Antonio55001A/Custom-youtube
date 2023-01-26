@@ -1,0 +1,100 @@
+.cont{
+  display: none;
+  margin-left: 190px;
+  z-index: 0;
+  width: 90%;
+  margin-top: 140px;
+}
+
+#cont1{
+  display: block;
+}
+
+.videoContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow-y: hidden;
+
+  }
+  
+  .videoContainer > div.window {
+    height: 280px;
+    background: transparent;
+    overflow-y: hidden;
+    margin: 20px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 400MS;
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+    transition: 400ms;
+    overflow-x: hidden;
+  }
+
+  .videoContainer > div.window:hover  {
+
+    opacity: 0.4;
+    z-index: 10;
+    transform: scale(1.2);
+
+  }
+
+
+  .videoContainer > div.window img{
+    width: 80%;
+    height: 150px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    object-fit:cover;
+    opacity: 0.9;
+  }
+
+  .videoContainer > div.window div.infoVideo{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .videoContainer > div.window div.infoVideo div.profile-img{
+    width: 30px;
+    height: 25px;
+  }
+
+  
+  .videoContainer > div.window div.infoVideo .video-description{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding-left: 5px;
+  }
+
+.videoContainer > div.window div.infoVideo .video-description h2{
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .videoContainer > div.window div.infoVideo .video-description h4{
+    font-size: 12px;
+    color: var(--clr-grey-7);
+  }
+
+  /* style generico per div .cont .prop */
+
+
+  .prop{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 150px;
+  }
+
+
+  .cont h1{
+    text-align: center;
+    padding-top: 20px;
+  }

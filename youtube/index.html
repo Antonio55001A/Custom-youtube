@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube design</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" type="image/x-icon" href="/img/youtubeLogo.png">
+
+    <!-- librerie importate -->
+
+    <!-- https://owlcarousel2.github.io/OwlCarousel2/ -->
+    <!-- https://boxicons.com/ -->
+    <!-- https://code.jquery.com/jquery-3.5.1.js -->
+
+</head>
+<body id="body">
+
+    <header id="header"> 
+          
+        <div> 
+
+            <div class="radius" onclick="OpenMenu()" id="open"> <box-icon name='menu' class="icons"></box-icon></div>
+            <a href="/"><img src="/img/youtubeLogo.png" alt="youtubeLogo" width="40px" height="40px"/></a>
+        </div> 
+        <div class="search-container">
+            <input type="text" id="search">
+            <button>
+                <box-icon name='search-alt-2' color='#ffffff' ></box-icon>
+            </button>
+        </div>
+        <div class="icon container">
+      
+            <div class="radius" onclick="DarkMode()"><box-icon type='solid' name='moon'></box-icon></div>
+            <div class="radius" ><box-icon name='bell'class="icons" id="darkMode"></box-icon></div>
+            <div class="profile-img"></div>
+        </div>
+    </header>
+    
+<main>
+    <section>
+        <div class="main-container">
+                <div class="containerNav" id="nav" >
+                        <div class="radius" name="link-nav" id="nav1" onclick="showDiv(1)" >
+                            <box-icon name='home' type='solid' class='icons'></box-icon>
+                            <a><strong>Home</strong></a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav2" onclick="showDiv(2)">
+                            <box-icon name='news' class="icons"></box-icon>
+                              <a>News</a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav3" onclick="showDiv(3)" >
+                            <box-icon name='line-chart' class="icons"></box-icon>                    
+                                <a>Moda</a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav4" onclick="showDiv(4)" >
+                            <box-icon type='solid' name='pie-chart-alt-2' class="icons"></box-icon>
+                            <a>Calcio</a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav5" onclick="showDiv(5)" >
+                            <box-icon name='customize' type='solid' class="icons" ></box-icon>
+                            <a>trading</a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav6" onclick="showDiv(6)">
+                            <box-icon name='label' type='solid' class="icons" ></box-icon>
+                            <a>Scarpe</a>
+                        </div>
+                        <div class="radius" name="link-nav" id="nav7"onclick="showDiv(7)" >
+                            <box-icon name='bell'></box-icon>
+                            <a>Fame</a>
+                        </div>
+                  </div>
+
+            <div class="containerVideo" >
+                <div class="wrapper" id="wrapper">
+                    <div class="carousel owl-carousel">
+                        <div class="card card-1" onclick="showDiv(1)">
+                        <a>  Home</a>
+                            </div>
+                        <div class="card card-2" onclick="showDiv(2)">
+                                <a>News</a>
+                            </div>
+                        <div class="card card-3" onclick="showDiv(3)">
+                                <a>Moda</a>
+                            </div>
+                        <div class="card card-4" onclick="showDiv(4)">
+                                <a>Calcio</a>
+                        </div>
+                        <div class="card card-5" onclick="showDiv(5)">
+                                <a>trading</a>
+                        </div>
+                        <div class="card card-6" onclick="showDiv(6)">
+                                <a>Scarpe</a>
+                        </div>
+                        <div class="card card-7" onclick="showDiv(7)">
+                            <a>Fame</a>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="cont" name="cont" id="cont1">
+                    <h1>Home</h1>
+
+                    <div class="news" id="news">
+                        <!-- elementi generati nel file fect.js -->
+                        <!--   Struttura della card che genero nel file fetchData.js
+
+                        <div class="window" id="window">
+                                <img src="${news.urlToImage}" alt="${news.name}">
+                            <div class="infoVideo">
+                                <div class="profile-img"></div>
+                                <div class="video-description">
+                                    <h2>${news.title}</h2>
+                                    <h4>${news.description}</h4>
+                                </div>
+                                <box-icon name='dots-vertical-rounded'></box-icon>
+                            </div>
+                        </div> 
+                        
+                        -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<p class="numberPages" id="Npage">1</p>
+
+
+<script src="script/app.js"></script>
+<script src="script/fetchData.js"></script>
+<script src="script/search.js"></script>
+<script src="script/darkMode.js"></script>
+<script src="script/carousel.js"></script>
+
+</body>
+</html>

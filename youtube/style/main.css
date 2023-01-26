@@ -1,0 +1,128 @@
+main section div.main-container{
+    display: flex;
+}
+
+main section div.main-container div.containerNav{
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1;
+
+}
+
+main section div.main-container div.containerNav:hover{
+
+overflow-y: scroll;
+}
+
+/* da verificare */
+main section div.main-container div.containerNav::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px rgb(203, 203, 203); 
+    border-radius: 10px;
+    background: red;
+  }
+
+main section div.main-container div.containerVideo{
+
+    width: 92%;
+
+}
+
+
+main section div.main-container div.containerNav div.radius {
+
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 12px 10px 20px 10px;
+    border-radius: 6px;
+    transition: 600ms;
+    font-size: 13px;
+    align-items: center;
+
+}
+
+main section div.main-container div.containerNav div.radius:first-child{
+    background-color: var(--clr-grey-9);
+}
+main section div.main-container div.containerNav div.radius box-icon.icons{
+    width: 20px;
+    height: 20px;
+}
+
+main section div.main-container div.containerNav div.radius:hover{
+
+    background-color: var(--clr-grey-9);
+
+}
+
+main section div.main-container div.containerNav div.radius a{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+/* inizio sezione video */
+
+.containerVideo{
+    width: 92%;
+}
+.wrapper{
+  width: 100%;
+  position: fixed;
+  margin-top: 80px;
+  z-index: 1;
+  background-color: white;
+  margin-left: 190px;
+
+}
+.carousel{
+  max-width: 100%;
+  /* margin: auto; */
+  padding: 10 30px;
+}
+.carousel .card{
+  color: #fff;
+  text-align: center;
+  margin: 20px 10px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: 500ms;
+  cursor: pointer;
+}
+.carousel .card-1{
+  background: #ed1c24;
+}
+.carousel .card-2{
+  background: #0072bc;
+}
+.carousel .card-3{
+  background: #39b54a;
+}
+.carousel .card-4{
+  background: #f26522;
+}
+
+.carousel .card-5{
+  background: #7fcd0a;
+}
+
+.carousel .card-6{
+  background: #d0043a;
+}
+
+.carousel .card-7{
+  background: #0dcc99;
+}
+
+.card:hover{
+    background-color: #fff;
+    color: black;
+}
